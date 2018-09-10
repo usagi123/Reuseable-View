@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Implement_xib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho Chi Minh City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPi-mu-WuX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ls4-Rn-ADf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23oC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-Ax-xBE">
+                                <rect key="frame" x="0.0" y="61" width="375" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="GNG-tW-aGl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-2A-W1W" customClass="DetailsWeather" customModule="Implement_xib" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="121" width="375" height="150"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-ak-UJT" customClass="DetailsWeather" customModule="Implement_xib" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="279" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.72941176470000002" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-c9-rw4" customClass="DetailsWeather" customModule="Implement_xib" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="415" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GNQ-ak-UJT" firstAttribute="trailing" secondItem="HPI-c9-rw4" secondAttribute="trailing" id="1W7-MZ-toe"/>
+                            <constraint firstItem="HPI-c9-rw4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="415" id="407-It-FIf"/>
+                            <constraint firstItem="HPI-c9-rw4" firstAttribute="top" secondItem="GNQ-ak-UJT" secondAttribute="bottom" constant="8" symbolic="YES" id="5yc-gF-EZr"/>
+                            <constraint firstItem="YdU-2A-W1W" firstAttribute="top" secondItem="ziI-Ax-xBE" secondAttribute="bottom" constant="8" symbolic="YES" id="8tz-nX-EDg"/>
+                            <constraint firstItem="GNQ-ak-UJT" firstAttribute="top" secondItem="YdU-2A-W1W" secondAttribute="bottom" constant="8" symbolic="YES" id="GUV-jB-NIL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HPI-c9-rw4" secondAttribute="bottom" constant="124" id="HKW-u8-qJM"/>
+                            <constraint firstItem="ziI-Ax-xBE" firstAttribute="trailing" secondItem="YdU-2A-W1W" secondAttribute="trailing" id="JQG-0g-fY1"/>
+                            <constraint firstItem="YdU-2A-W1W" firstAttribute="leading" secondItem="GNQ-ak-UJT" secondAttribute="leading" id="Lgh-gZ-VJp"/>
+                            <constraint firstItem="ziI-Ax-xBE" firstAttribute="top" secondItem="UPi-mu-WuX" secondAttribute="bottom" constant="8" symbolic="YES" id="PxI-cY-Axo"/>
+                            <constraint firstItem="UPi-mu-WuX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SWi-VZ-Tdr"/>
+                            <constraint firstItem="GNQ-ak-UJT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="279" id="Vn9-7R-JbJ"/>
+                            <constraint firstItem="GNQ-ak-UJT" firstAttribute="leading" secondItem="HPI-c9-rw4" secondAttribute="leading" id="W6h-bg-aLO"/>
+                            <constraint firstAttribute="trailing" secondItem="UPi-mu-WuX" secondAttribute="trailing" id="Zj3-qu-Rtw"/>
+                            <constraint firstItem="UPi-mu-WuX" firstAttribute="leading" secondItem="ziI-Ax-xBE" secondAttribute="leading" id="bqq-ce-9X5"/>
+                            <constraint firstItem="UPi-mu-WuX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dsc-fo-7qt"/>
+                            <constraint firstItem="ziI-Ax-xBE" firstAttribute="leading" secondItem="YdU-2A-W1W" secondAttribute="leading" id="hH0-4x-jmN"/>
+                            <constraint firstItem="UPi-mu-WuX" firstAttribute="trailing" secondItem="ziI-Ax-xBE" secondAttribute="trailing" id="l4s-IA-KDb"/>
+                            <constraint firstItem="YdU-2A-W1W" firstAttribute="trailing" secondItem="GNQ-ak-UJT" secondAttribute="trailing" id="oNW-lI-dLq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer" destination="HPI-c9-rw4" id="pHA-iH-XuZ"/>
+                        <outlet property="detailsWeatherView" destination="YdU-2A-W1W" id="GWB-Rw-ubi"/>
+                        <outlet property="locationLabel" destination="UPi-mu-WuX" id="94Y-ii-cQf"/>
+                        <outlet property="reuseable" destination="GNQ-ak-UJT" id="nuN-jX-Y5e"/>
+                        <outlet property="temperatureLabel" destination="ziI-Ax-xBE" id="2hw-cc-TLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
